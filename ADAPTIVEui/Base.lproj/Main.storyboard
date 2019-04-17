@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,58 +15,169 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ADAPTIVEui" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="vVD-Qc-XtC">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="599"/>
+                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="375"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGL-W3-fAE" userLabel="Product Info View">
-                                <rect key="frame" x="0.0" y="596" width="768" height="428"/>
+                                <rect key="frame" x="333.5" y="0.0" width="333.5" height="375"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PSD T=Shirt Mockup Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-78-y0r">
-                                        <rect key="frame" x="15" y="15" width="738" height="35"/>
+                                        <rect key="frame" x="15" y="15" width="302.5" height="34.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weu-Yx-kye">
-                                        <rect key="frame" x="15" y="65" width="738" height="98.5"/>
+                                        <rect key="frame" x="15" y="57.5" width="303" height="197"/>
                                         <string key="text">This is a free psd T-shirt mockup provided by pixeden.com. The PSD comes with a plain simple tee-shirt mockup tmeplate. You can edit the t-shirt color and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups. </string>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="2tQ-78-y0r" firstAttribute="leading" secondItem="JGL-W3-fAE" secondAttribute="leading" constant="15" id="70K-WC-wwd"/>
                                     <constraint firstAttribute="trailing" secondItem="2tQ-78-y0r" secondAttribute="trailing" constant="15" id="F4W-rR-1g7"/>
+                                    <constraint firstAttribute="trailing" secondItem="weu-Yx-kye" secondAttribute="trailing" constant="15.5" id="Oqf-kG-dmo"/>
+                                    <constraint firstAttribute="trailing" secondItem="2tQ-78-y0r" secondAttribute="trailing" constant="16" id="PfL-UM-Jhm"/>
                                     <constraint firstAttribute="trailing" secondItem="weu-Yx-kye" secondAttribute="trailing" constant="15" id="Qy2-uP-Dbx"/>
+                                    <constraint firstItem="2tQ-78-y0r" firstAttribute="top" secondItem="JGL-W3-fAE" secondAttribute="top" constant="15" id="R65-DK-yzB"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="weu-Yx-kye" secondAttribute="bottom" constant="15" id="XzY-RD-Ll9"/>
                                     <constraint firstItem="weu-Yx-kye" firstAttribute="leading" secondItem="JGL-W3-fAE" secondAttribute="leading" constant="15" id="YMB-UH-iSD"/>
                                     <constraint firstItem="weu-Yx-kye" firstAttribute="top" secondItem="2tQ-78-y0r" secondAttribute="bottom" constant="15" id="ZYm-hh-wtR"/>
                                     <constraint firstItem="2tQ-78-y0r" firstAttribute="leading" secondItem="JGL-W3-fAE" secondAttribute="leading" constant="15" id="ase-Ih-tWG"/>
+                                    <constraint firstItem="weu-Yx-kye" firstAttribute="leading" secondItem="JGL-W3-fAE" secondAttribute="leading" constant="15" id="g9Q-S8-T1V"/>
+                                    <constraint firstItem="weu-Yx-kye" firstAttribute="top" secondItem="2tQ-78-y0r" secondAttribute="bottom" constant="8" id="k6O-gV-DMk"/>
                                     <constraint firstItem="2tQ-78-y0r" firstAttribute="top" secondItem="JGL-W3-fAE" secondAttribute="top" constant="15" id="mC5-zk-Bsh"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="70K-WC-wwd"/>
+                                        <exclude reference="F4W-rR-1g7"/>
+                                        <exclude reference="PfL-UM-Jhm"/>
+                                        <exclude reference="R65-DK-yzB"/>
+                                        <exclude reference="ase-Ih-tWG"/>
+                                        <exclude reference="mC5-zk-Bsh"/>
+                                        <exclude reference="Oqf-kG-dmo"/>
+                                        <exclude reference="Qy2-uP-Dbx"/>
+                                        <exclude reference="XzY-RD-Ll9"/>
+                                        <exclude reference="YMB-UH-iSD"/>
+                                        <exclude reference="ZYm-hh-wtR"/>
+                                        <exclude reference="g9Q-S8-T1V"/>
+                                        <exclude reference="k6O-gV-DMk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="70K-WC-wwd"/>
+                                        <include reference="PfL-UM-Jhm"/>
+                                        <include reference="R65-DK-yzB"/>
+                                        <include reference="Oqf-kG-dmo"/>
+                                        <include reference="g9Q-S8-T1V"/>
+                                        <include reference="k6O-gV-DMk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="F4W-rR-1g7"/>
+                                        <include reference="ase-Ih-tWG"/>
+                                        <include reference="mC5-zk-Bsh"/>
+                                        <include reference="Qy2-uP-Dbx"/>
+                                        <include reference="XzY-RD-Ll9"/>
+                                        <include reference="YMB-UH-iSD"/>
+                                        <include reference="ZYm-hh-wtR"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FfK-R7-Xfw"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HR4-eE-lRb"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="leading" secondItem="vVD-Qc-XtC" secondAttribute="trailing" id="Hb9-8w-f5r"/>
+                            <constraint firstItem="vVD-Qc-XtC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jxf-W7-fso"/>
+                            <constraint firstItem="vVD-Qc-XtC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OCV-97-xaB"/>
                             <constraint firstItem="JGL-W3-fAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OGM-K8-EwQ"/>
+                            <constraint firstItem="vVD-Qc-XtC" firstAttribute="width" secondItem="JGL-W3-fAE" secondAttribute="width" id="RrB-2N-45e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JGL-W3-fAE" secondAttribute="bottom" id="UhS-EF-t3P"/>
+                            <constraint firstItem="vVD-Qc-XtC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XdM-UJ-ytA"/>
                             <constraint firstItem="vVD-Qc-XtC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZKe-rl-pq3"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f5B-Bj-HFc"/>
                             <constraint firstItem="vVD-Qc-XtC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.585" id="fd4-0k-UCE"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gQC-AN-S6P"/>
                             <constraint firstItem="JGL-W3-fAE" firstAttribute="top" secondItem="vVD-Qc-XtC" secondAttribute="bottom" constant="-3" id="rWk-uN-TTV"/>
                             <constraint firstItem="vVD-Qc-XtC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="skz-OW-2y8"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xZc-AT-buO"/>
                             <constraint firstItem="vVD-Qc-XtC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ycj-wZ-B53"/>
                             <constraint firstItem="JGL-W3-fAE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yfX-p3-h1s"/>
+                            <constraint firstItem="JGL-W3-fAE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zwU-aU-ifU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UhS-EF-t3P"/>
+                                <exclude reference="Jxf-W7-fso"/>
+                                <exclude reference="OCV-97-xaB"/>
+                                <exclude reference="RrB-2N-45e"/>
+                                <exclude reference="XdM-UJ-ytA"/>
+                                <exclude reference="ZKe-rl-pq3"/>
+                                <exclude reference="fd4-0k-UCE"/>
+                                <exclude reference="skz-OW-2y8"/>
+                                <exclude reference="ycj-wZ-B53"/>
+                                <exclude reference="FfK-R7-Xfw"/>
+                                <exclude reference="HR4-eE-lRb"/>
+                                <exclude reference="Hb9-8w-f5r"/>
+                                <exclude reference="OGM-K8-EwQ"/>
+                                <exclude reference="f5B-Bj-HFc"/>
+                                <exclude reference="gQC-AN-S6P"/>
+                                <exclude reference="rWk-uN-TTV"/>
+                                <exclude reference="xZc-AT-buO"/>
+                                <exclude reference="yfX-p3-h1s"/>
+                                <exclude reference="zwU-aU-ifU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Jxf-W7-fso"/>
+                                <include reference="OCV-97-xaB"/>
+                                <include reference="RrB-2N-45e"/>
+                                <include reference="XdM-UJ-ytA"/>
+                                <include reference="FfK-R7-Xfw"/>
+                                <include reference="HR4-eE-lRb"/>
+                                <include reference="Hb9-8w-f5r"/>
+                                <include reference="f5B-Bj-HFc"/>
+                                <include reference="gQC-AN-S6P"/>
+                                <include reference="xZc-AT-buO"/>
+                                <include reference="zwU-aU-ifU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="UhS-EF-t3P"/>
+                                <include reference="ZKe-rl-pq3"/>
+                                <include reference="fd4-0k-UCE"/>
+                                <include reference="skz-OW-2y8"/>
+                                <include reference="ycj-wZ-B53"/>
+                                <include reference="OGM-K8-EwQ"/>
+                                <include reference="rWk-uN-TTV"/>
+                                <include reference="yfX-p3-h1s"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="53.523238380809602" y="26.399999999999999"/>
         </scene>
     </scenes>
     <resources>
